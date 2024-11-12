@@ -1,68 +1,69 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(27, 0, 46); height: 1in;">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <h2 style="padding-right: 5%; color: white; font-size: 1.5rem;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger; color: white;" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger; color: white;" href="/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link" style="font-size: larger; color: white;" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; border-radius: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <div class="banner" name="about-header" style="padding: 2rem; background-color: rgb(243, 243, 243); text-align: center; border-radius: 25px 25px 0 0;">
+      <h1 style="font-size: 2rem; color: rgb(27, 0, 46);">About Us</h1>
+      <p>Welcome to Best Cars dealership, home to the best cars in North America. We deal in the sale of domestic and imported cars at reasonable prices.</p>
     </div>
     
+    <div style="display: flex; justify-content: space-around; margin: 2rem auto;">
+      <div class="card" style="width: 30%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person1.jpg" alt="Card image" style="border-radius: 15px;">
+        <div class="card-body">
+          <p class="title" style="border-radius: 25px; background-color: rgb(27, 0, 46); color: white; padding: 5px; text-align: center; font-size: 1rem;">CEO</p>
+          <p style="font-size: 1.1rem; text-align: center;">Mark Bond</p>
+          <p class="card-text" style="font-size: 0.95rem; color: #555;">Mark leads the business with strategic insights and a customer-centric approach, fostering automotive industry success.</p>
+          <p style="text-align: center; font-size: 0.95rem;">mbond@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person2.jpg" alt="Card image" style="border-radius: 15px;">
+        <div class="card-body">
+          <p class="title" style="border-radius: 25px; background-color: rgb(27, 0, 46); color: white; padding: 5px; text-align: center; font-size: 1rem;">CMO</p>
+          <p style="font-size: 1.1rem; text-align: center;">Han Lue</p>
+          <p class="card-text" style="font-size: 0.95rem; color: #555;">Han drives impactful marketing strategies, elevating brand visibility and shaping consumer engagement for competitive growth.</p>
+          <p style="text-align: center; font-size: 0.95rem;">hanlue@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person4.jpg" alt="Card image" style="border-radius: 15px;">
+        <div class="card-body">
+          <p class="title" style="border-radius: 25px; background-color: rgb(27, 0, 46); color: white; padding: 5px; text-align: center; font-size: 1rem;">CFO</p>
+          <p style="font-size: 1.1rem; text-align: center;">Elizabeth Olsen</p>
+          <p class="card-text" style="font-size: 0.95rem; color: #555;">Elizabeth manages the company's financial stability, using strategic planning to optimize resources and ensure sustainable growth.</p>
+          <p style="text-align: center; font-size: 0.95rem;">elizabeth@bestcars.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </html>
