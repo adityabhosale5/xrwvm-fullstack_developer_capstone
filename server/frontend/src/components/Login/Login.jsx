@@ -52,14 +52,14 @@ const Login = ({ onClose }) => {
       >
           <form className="login_panel" style={{}} onSubmit={login}>
               <div>
-              <span className="input_field">Username </span>
+              <div className="input_field_label">Username </div>
               <input type="text"  name="username" placeholder="Username" className="input_field" onChange={(e) => setUserName(e.target.value)}/>
               </div>
               <div>
-              <span className="input_field">Password </span>
+              <div className="input_field_label">Password </div>
               <input name="psw" type="password"  placeholder="Password" className="input_field" onChange={(e) => setPassword(e.target.value)}/>            
               </div>
-              <div>
+              <div className="buttons">
               <input className="action_button" type="submit" value="Login"/>
               <input className="action_button" type="button" value="Cancel" onClick={()=>setOpen(false)}/>
               </div>

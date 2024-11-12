@@ -2,12 +2,30 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 2%;
-  background-color: darkturquoise;
+  margin-top: 5%;
+  background-color: rgb(248, 245, 249);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   min-width: 350px;
   width: 30%;
 }
 
+.text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000000;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.close-btn{
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  margin-top: -14px;
+  cursor: pointer;
+  border-radius: 20px;
+}
 .inputs{
   display: flex;
   flex-direction: column;
@@ -22,30 +40,37 @@
 
 .input_field{
   height:40px;
-  width:200px;
+  width:300px;
   margin:.5cm;
   font-size: medium;
 }
 
-.submit_panel{
+.submit_panel {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-top: 5%;
   margin-bottom: 5%;
+  justify-content: center;
+  align-items: center; 
 }
 
-.submit{
-  margin-left: 30%;
-  margin-right: 30%;
+.submit {
   cursor: pointer;
-  font-size: large;
-  color: rgb(97, 64, 128);
-  border-radius: 10px;
-  height:50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(97, 64, 128);
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  width: 100px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 
 .submit:hover {
-  background-color: wheat;
+  background-color: #1B002E;
+  transform: scale(1.05);
 }
 
 .header{
